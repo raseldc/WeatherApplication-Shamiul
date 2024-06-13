@@ -79,21 +79,14 @@ public class WeatherView extends VerticalLayout {
     }
 
     private Component getWeather() {
-
-
         VerticalLayout content = new VerticalLayout(grid, form);
-//        content.setFlexGrow(2, grid);
-//        content.setFlexGrow(1, form);
-//        content.setFlexGrow(1,  gridDaily);
         content.addClassName("content");
         content.setSizeFull();
         return content;
     }
 
     private void configureForm() {
-
         form = new WeatherFormDetails(WebClient.builder());
-
     }
 
 
@@ -104,11 +97,9 @@ public class WeatherView extends VerticalLayout {
         filterText.addValueChangeListener(e -> updateList());
         loadFavouriteList();
 
-
         var toolbar = new HorizontalLayout(filterText, favouriteListDropDown);
         toolbar.setAlignItems(Alignment.BASELINE);
         toolbar.addClassName("toolbar");
-
 
         toolbar.setFlexGrow(1, filterText);
         toolbar.setFlexGrow(2, favouriteListDropDown);
