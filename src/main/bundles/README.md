@@ -1,8 +1,6 @@
 # WeatherApp
 
-This is a weather application built using MySQL, Spring Boot,
-Maven and Vaadin. The application allows users
-to register, login, and view weather details.
+This is a weather application built using Spring Boot, Maven, MySql and Vaadin. The application allows users to register, login, and view weather details.
 
 ## Features
 
@@ -26,22 +24,21 @@ To set up the project on your local machine, follow these steps:
 2. Navigate to the project directory.
 3. Run `mvn clean install` to build the project and install the dependencies.
 4. Start the application by running `mvn spring-boot:run`.
-5. For DataBase setup, create a database named `weather` in MySQL.
-6. Update the `application.properties` file with your MySQL username and password.
-7. Use WeatherDB.sql file to create the required tables in the database.
-
+5. Open your web browser and navigate to `http://localhost:8080/register`.
+6. Or Run `Application.java` file as Java Application.
 ## Usage
 
 To use the application:
 
 1. Open your web browser and navigate to `http://localhost:8080/register`.
-2. Register a new user by providing a username and password.![Register Page](ProjectScreenShot/RegistrationPage.png)
-3. Login to the application using the registered username and password.![Login Page](ProjectScreenShot/LoginPage.png)
-4. Landing page will be displayed after successful login.![Landing Page](ProjectScreenShot/LandingPage.png)
-5. Enter the city name to view the city list.![Weather Details Page](ProjectScreenShot/LocationSearchPage.png)
-6. View the weather details.![Weather Details Page](ProjectScreenShot/WeatherDetailsPage.png)
+2. Register a new user by providing a username and password.
+3. Login to the application using the registered username and password.
+4. View the weather details.
 
 ## Contributing
 
 Contributions are welcome. Please make sure to update tests as appropriate.
 
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
